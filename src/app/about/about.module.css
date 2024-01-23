@@ -1,0 +1,49 @@
+.imgcontainer {
+  /* width: 100%; */
+  position: relative;
+  flex: 1;
+  /* height: 500px; */
+}
+.container {
+  display: flex;
+  flex: 1;
+  gap: 100px;
+}
+.textcontainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box h1 {
+  color: var(--btn);
+}
+.title {
+  font-size: 66px;
+}
+.subtitle {
+  color: var(--btn);
+}
+.img {
+  object-fit: contain;
+}
